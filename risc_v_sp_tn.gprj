@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="rtl/data_mem.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/decode_execute.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/execute_mem.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/fetch_decode.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/immGen.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/inst_mem.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/mem_wb.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/program_counter.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/reg_file.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/topmodule.sv" type="file.verilog" enable="1"/>
+        <File path="rtl/data_mem.sv.bak" type="file.other" enable="1"/>
+        <File path="rtl/define_state.h" type="file.other" enable="1"/>
+        <File path="rtl/define_state.h.bak" type="file.other" enable="1"/>
+        <File path="rtl/immGen.sv.bak" type="file.other" enable="1"/>
+        <File path="rtl/inst_mem.sv.bak" type="file.other" enable="1"/>
+        <File path="rtl/reg_file.sv.bak" type="file.other" enable="1"/>
+        <File path="rtl/topmodule.sv.bak" type="file.other" enable="1"/>
+    </FileList>
+</Project>

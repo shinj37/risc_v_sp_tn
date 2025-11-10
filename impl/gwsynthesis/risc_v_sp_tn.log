@@ -1,0 +1,72 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv'
+ERROR (EX3094) : Net type must be explicitly specified for 'clock' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":7)
+ERROR (EX3094) : Net type must be explicitly specified for 'resetn' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":8)
+ERROR (EX3094) : Net type must be explicitly specified for 'wr_en' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":9)
+ERROR (EX3094) : Net type must be explicitly specified for 'read_en' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":10)
+ERROR (EX3094) : Net type must be explicitly specified for 'address' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":11)
+ERROR (EX3094) : Net type must be explicitly specified for 'write_data' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":12)
+ERROR (EX3928) : Module 'data_mem' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv":29)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv":7)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv":7)
+ERROR (EX3863) : Syntax error near 'input'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv":12)
+ERROR (EX2656) : SystemVerilog keyword 'input' used in incorrect context("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv":12)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv":7)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv":7)
+ERROR (EX3863) : Syntax error near 'input'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv":12)
+ERROR (EX2656) : SystemVerilog keyword 'input' used in incorrect context("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv":12)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv":7)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv":7)
+ERROR (EX3863) : Syntax error near 'input'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv":12)
+ERROR (EX2656) : SystemVerilog keyword 'input' used in incorrect context("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv":12)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv":6)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv":6)
+ERROR (EX3094) : Net type must be explicitly specified for 'instruction' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv":9)
+ERROR (EX3928) : Module 'immGen' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv":49)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv'
+ERROR (EX3094) : Net type must be explicitly specified for 'clock' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv":7)
+ERROR (EX3094) : Net type must be explicitly specified for 'resetn' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv":8)
+ERROR (EX3094) : Net type must be explicitly specified for 'inst_address' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv":10)
+ERROR (EX3928) : Module 'inst_mem' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv":18)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv":7)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv":7)
+ERROR (EX3863) : Syntax error near 'input'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv":12)
+ERROR (EX2656) : SystemVerilog keyword 'input' used in incorrect context("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv":12)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv'
+ERROR (EX3094) : Net type must be explicitly specified for 'clock' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv":7)
+ERROR (EX3094) : Net type must be explicitly specified for 'resetn' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv":8)
+ERROR (EX3094) : Net type must be explicitly specified for 'PC_in' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv":10)
+ERROR (EX3928) : Module 'program_counter' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv":22)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":6)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":6)
+ERROR (EX3094) : Net type must be explicitly specified for 'clock' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":11)
+ERROR (EX3094) : Net type must be explicitly specified for 'resetn' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":12)
+ERROR (EX3094) : Net type must be explicitly specified for 'reg_wr_en' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":13)
+ERROR (EX3094) : Net type must be explicitly specified for 'opcode' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":15)
+ERROR (EX3094) : Net type must be explicitly specified for 'instruction' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":17)
+ERROR (EX3094) : Net type must be explicitly specified for 'write_data' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":18)
+ERROR (EX3928) : Module 'reg_file' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv":86)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv' ignored due to errors
+Analyzing Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv'
+Analyzing included file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/define_state.h'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv":7)
+Back to file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv'("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv":7)
+ERROR (EX3094) : Net type must be explicitly specified for 'clock' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv":10)
+ERROR (EX3094) : Net type must be explicitly specified for 'resetn' when default_nettype is none("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv":11)
+ERROR (EX3928) : Module 'topmodule' is ignored due to previous errors("/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv":247)
+Verilog file '/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv' ignored due to errors
+GowinSynthesis finish

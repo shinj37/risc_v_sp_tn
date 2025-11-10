@@ -1,0 +1,53 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/data_mem.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/decode_execute.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/execute_mem.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/fetch_decode.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/immGen.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/inst_mem.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/mem_wb.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/program_counter.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/reg_file.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl/topmodule.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+  "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/rtl"
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/justinshin/RISC_V_SP_TN/risc_v_sp_tn/impl/temp/rtl_parser.result",
+ "Top" : "topmodule.sv",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

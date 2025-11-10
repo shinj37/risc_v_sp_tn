@@ -1,0 +1,89 @@
+`timescale 1ns/100ps
+`ifndef DISABLE_DEFAULT_NET
+`default_nettype none
+`endif
+`include "define_state.h"
+
+module decode_execute_unit (
+    input logic clock,
+    input logic resetn,
+    
+    // Control signals input (WB and MEM stage controls)
+    input logic reg_write_in,
+    input logic mem_to_reg_in,
+    input logic mem_read_in,
+    input logic mem_write_in,
+    
+    // Control signals input (EX stage controls)
+    input logic reg_dst_in,
+    input logic alu_src_in,
+    input logic [1:0] alu_op_in,
+    
+    // Data inputs from ID stage
+    input logic [31:0] instruction,
+    input logic [31:0] immediate,
+    input logic [31:0] reg_read_data1,  // ALU input 1 data
+    input logic [31:0] reg_read_data2,  // ALU input 2 data
+    input logic [4:0] reg_rs_1_in,      // Source register 1 address (for forwarding)
+    input logic [4:0] reg_rs_2_in,      // Source register 2 address (for forwarding)
+    input logic [4:0] reg_rd_in,        // Destination register address
+    
+    // Control signals output (EX and MEM stage)
+    output logic reg_write_out,
+    output logic mem_to_reg_out,
+    output logic mem_read_out,
+    output logic mem_write_out,
+    
+    // Data outputs to EX stage
+    output logic [31:0] instruction_out,
+    output logic [31:0] immediate_out,
+    output logic [31:0] reg_read_data1_out,
+    output logic [31:0] reg_read_data2_out,
+    output logic [4:0] reg_rs_1_out,
+    output logic [4:0] reg_rs_2_out,
+    output logic [4:0] register_rd_out
+);
+
+    always_ff @(posedge clock or negedge resetn) begin
+        if (!resetn) begin
+            // Reset all control signals
+            reg_write_out <= 1'b0;
+            mem_to_reg_out <= 1'b0;
+            mem_read_out <= 1'b0;
+            mem_write_out <= 1'b0;
+            reg_dst_out <= 1'b0;
+            alu_src_out <= 1'b0;
+            alu_op_out <= 2'b0;
+            
+            // Reset all data signals
+            instruction_out <= 32'b0;
+            immediate_out <= 32'b0;
+            reg_read_data1_out <= 32'b0;
+            reg_read_data2_out <= 32'b0;
+            reg_rs_1_out <= 5'b0;
+            reg_rs_2_out <= 5'b0;
+            register_rd_out <= 5'b0;
+        end
+        else begin
+            // Latch control signals
+            reg_write_out <= reg_write_in;
+            mem_to_reg_out <= mem_to_reg_in;
+            mem_read_out <= mem_read_in;
+            mem_write_out <= mem_write_in;
+            reg_dst_out <= reg_dst_in;
+            alu_src_out <= alu_src_in;
+            alu_op_out <= alu_op_in;
+            
+            // Latch data signals
+            instruction_out <= instruction;
+            immediate_out <= immediate;
+            reg_read_data1_out <= reg_read_data1;
+            reg_read_data2_out <= reg_read_data2;
+            reg_rs_1_out <= reg_rs_1_in;
+            reg_rs_2_out <= reg_rs_2_in;
+            register_rd_out <= reg_rd_in;
+        end
+    end
+
+endmodule
+
