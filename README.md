@@ -1,6 +1,8 @@
-# RV32I RISC-V Processor with SIMD Extensions
+# RV32I RISC-V Processor with planned SIMD Extensions
 
 A hardware implementation of the RISC-V RV32I instruction set with planned SIMD (Single Instruction, Multiple Data) extensions, targeting the Tang Nano 20K FPGA development board.
+
+## Disclaimer: This is a new working repository, that is why there are such few commits. There were issues with the previous one, so had to make a new one.  
 
 ## Overview
 
