@@ -13,15 +13,15 @@ This project implements a 32-bit RISC-V processor core conforming to the RV32I b
 - **RV32I Base ISA**: Implementation of the 32-bit RISC-V integer instruction set
 - **SystemVerilog Design**: Modern HDL with enhanced verification capabilities
 - **Modular Architecture**: Separate instruction memory, data memory, and register file modules
-- **Quartus Prime Support**: Project files configured for Altera/Intel toolchain
-- **ModelSim Simulation**: Complete testbench and simulation scripts
+- - **Tang Nano 20K Port**: Migration from Quartus to Gowin EDA toolchain
 
+### Currently Working on
+- **Performance Optimizations**: Pipeline improvements and hazard handling
+- 
 ### Planned Features
 
 - **SIMD Extensions**: Custom parallel processing instructions for vector operations
-- **Performance Optimizations**: Pipeline improvements and hazard handling
 - **Enhanced Peripherals**: UART, GPIO, and timer modules
-- **Tang Nano 20K Port**: Migration from Quartus to Gowin EDA toolchain
 
 ## Target Hardware
 
