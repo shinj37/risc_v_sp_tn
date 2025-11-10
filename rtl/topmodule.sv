@@ -100,8 +100,16 @@ fetch_decode fetch_decode_unit (
     .instruction_out(instruction_out),
     .next_pc(pc_incr),
     .valid_out(valid_out)
-);s
+);
 
+decode_execute decode_execute_unit (
+
+);
+
+control control_unit (
+	
+
+)
 
 always_ff @(posedge clock or negedge resetn ) begin
 	if (!resetn) begin
