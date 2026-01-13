@@ -21,6 +21,8 @@ module decode_execute_unit (
     // WB control signals
     input logic mem_to_reg_in,
     input logic reg_write_in,
+
+    input logic [31:0] pc_in,  
     
     // EX signals
     input logic alu_src_in,
@@ -53,7 +55,8 @@ module decode_execute_unit (
     output logic [31:0] reg_read_data2_out,
     output logic [4:0] reg_rs_1_out,
     output logic [4:0] reg_rs_2_out,
-    output logic [4:0] register_rd_out
+    output logic [4:0] register_rd_out,
+    output logic [31:0] pc_out
 );
 
     always_ff @(posedge clock or negedge resetn) begin
@@ -76,6 +79,7 @@ module decode_execute_unit (
             reg_rs_1_out <= 5'b0;
             reg_rs_2_out <= 5'b0;
             register_rd_out <= 5'b0;
+            pc_out <= 32'b0;
         end
         else if (flush) begin
             // Flush: Insert a bubble (NOP) by clearing control signals
@@ -97,6 +101,8 @@ module decode_execute_unit (
             reg_rs_1_out <= 5'b0;
             reg_rs_2_out <= 5'b0;
             register_rd_out <= 5'b0;
+
+            pc_out <= 32'b0;
         end
         else if (~stall) begin
             // Normal operation: latch new values
@@ -118,8 +124,11 @@ module decode_execute_unit (
             reg_rs_1_out <= reg_rs_1_in;
             reg_rs_2_out <= reg_rs_2_in;
             register_rd_out <= reg_rd_in;
+
+            pc_out <= pc_in;
         end
         // else: stall == 1, hold current values (do nothing)
     end
 
+    
 endmodule

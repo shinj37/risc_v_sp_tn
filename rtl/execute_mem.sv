@@ -45,7 +45,8 @@ module execute_mem_unit (
     // Output results
     output logic [4:0] reg_rd_out,
     output logic [31:0] alu_result_out,
-    output logic [31:0] alu_in_2_out
+    output logic [31:0] alu_in_2_out,
+    output logic [31:0] branch_target_out
 );
 
     always_ff @(posedge clock or negedge resetn) begin
@@ -62,6 +63,7 @@ module execute_mem_unit (
             reg_rd_out <= 5'b0;
             alu_result_out <= 32'b0;
             alu_in_2_out <= 32'b0;
+            branch_target_out <= 32'b0; 
         end
         else if (flush) begin
             // Flush: Insert a bubble (NOP) by clearing control signals
@@ -77,6 +79,7 @@ module execute_mem_unit (
             reg_rd_out <= 5'b0;
             alu_result_out <= 32'b0;
             alu_in_2_out <= 32'b0;
+            branch_target_out <= 32'b0; 
         end
         else if (~stall) begin
             // Normal operation: latch new values
@@ -92,6 +95,7 @@ module execute_mem_unit (
             reg_rd_out <= reg_rd_in;
             alu_result_out <= alu_result_in;
             alu_in_2_out <= alu_in_2_in;
+            branch_target_out <= branch_target_in; 
         end
         // else: stall == 1, hold current values (do nothing)
     end
